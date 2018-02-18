@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Loading } from 'ionic-angular';
 import { ActionSheetPage } from '../action-sheet/action-sheet';
 import { RadioAlertPage } from '../radio-alert/radio-alert';
 import { LoadingPage } from '../loading/loading';
-import { MenuPage } from '../menu/menu';
 
 @Component({
   selector: 'page-home',
@@ -31,24 +30,15 @@ export class HomePage {
 
   tapSingleComponentItem(item:any){
     console.log(item.title);
-    switch(item.title)
+    if(item.title=="Radio Alert"){
+      this.navCtrl.push(RadioAlertPage);
+      
+    }else if(item.title=="Action Sheet"){
+      this.navCtrl.push(ActionSheetPage);  
+    }else if(item.title=="Loading"){
+      this.navCtrl.push(LoadingPage);  
+    }else if(item.title=="Menu")
     {
-      case "Action Sheet":
-      {
-        console.log("actio sheet");
-        this.navCtrl.push(ActionSheetPage);  
-      }
-      case "Radio Alert":
-      {
-        console.log("radio alert");
-        this.navCtrl.push(RadioAlertPage);
-      }
-      case "Loading":{
-        this.navCtrl.push(LoadingPage);
-      }
-      case "Menu":{
-
-      }
     }
   }
 

@@ -24,10 +24,7 @@ export class LoadingPage {
 
     });
     loader.present();
-    for(let i =0; i<1000000000000;i++){
-
-    }
-    loader.dismiss();
+    
     
   }
   ionViewDidLoad() {

@@ -11,7 +11,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RadioAlertPage } from '../pages/radio-alert/radio-alert';
 import { LoadingPage } from '../pages/loading/loading';
-import { MenuPage } from '../pages/menu/menu';
 
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { MenuPage } from '../pages/menu/menu';
     ActionSheetPage,
     RadioAlertPage,
     LoadingPage,
-    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +33,6 @@ import { MenuPage } from '../pages/menu/menu';
     ActionSheetPage,
     RadioAlertPage,
     LoadingPage,
-    MenuPage
   ],
   providers: [
     StatusBar,
