@@ -3,21 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import {ActionSheetPage} from '../pages/action-sheet/action-sheet'
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { RadioAlertPage } from '../pages/radio-alert/radio-alert';
+import { LoadingPage } from '../pages/loading/loading';
+import { MenuPage } from '../pages/menu/menu';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ActionSheetPage,
+    RadioAlertPage,
+    LoadingPage,
+    MenuPage
   ],
   imports: [
     BrowserModule,
@@ -26,10 +30,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ActionSheetPage,
+    RadioAlertPage,
+    LoadingPage,
+    MenuPage
   ],
   providers: [
     StatusBar,
