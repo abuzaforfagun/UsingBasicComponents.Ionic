@@ -11,6 +11,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { RadioAlertPage } from '../pages/radio-alert/radio-alert';
 import { LoadingPage } from '../pages/loading/loading';
+import { PopOverPage } from '../pages/pop-over/pop-over';
+import { PopOverCoontentComponent } from '../components/pop-over-coontent/pop-over-coontent';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { LoadingPage } from '../pages/loading/loading';
     ActionSheetPage,
     RadioAlertPage,
     LoadingPage,
+    PopOverPage,
+    PopOverCoontentComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +37,8 @@ import { LoadingPage } from '../pages/loading/loading';
     ActionSheetPage,
     RadioAlertPage,
     LoadingPage,
+    PopOverPage,
+    PopOverCoontentComponent
   ],
   providers: [
     StatusBar,

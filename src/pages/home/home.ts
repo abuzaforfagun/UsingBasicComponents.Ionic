@@ -3,6 +3,7 @@ import { NavController, Loading } from 'ionic-angular';
 import { ActionSheetPage } from '../action-sheet/action-sheet';
 import { RadioAlertPage } from '../radio-alert/radio-alert';
 import { LoadingPage } from '../loading/loading';
+import { PopOverPage } from '../pop-over/pop-over';
 
 @Component({
   selector: 'page-home',
@@ -25,6 +26,9 @@ export class HomePage {
       {
         title:"Menu"
       },
+      {
+        title:"Pop Over"
+      }
     );
   }
 
@@ -37,8 +41,9 @@ export class HomePage {
       this.navCtrl.push(ActionSheetPage);  
     }else if(item.title=="Loading"){
       this.navCtrl.push(LoadingPage);  
-    }else if(item.title=="Menu")
+    }else if(item.title=="Pop Over")
     {
+      this.navCtrl.push(PopOverPage);
     }
   }
 
