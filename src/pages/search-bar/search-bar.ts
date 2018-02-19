@@ -40,11 +40,12 @@ export class SearchBarPage {
     console.log(keyword);
     keyword =keyword.target.value;
     // return Enumerable.asEnumerable(this.items).Where(i=>i.indexOf(keyword)>0);
-    if (keyword ) {
-      this.items = this.items.filter((item) => {
-        return (item.toLowerCase().indexOf(keyword.toLowerCase()) > -1);
-      })
-    }
+    this.items=Enumerable.asEnumerable(this.items).Where(i=>i.toLowerCase().indexOf(keyword.toLowerCase())>-1).ToArray();
+    // if (keyword ) {
+    //   this.items = this.items.filter((item) => {
+    //     return (item.toLowerCase().indexOf(keyword.toLowerCase()) > -1);
+    //   })
+    // }
 
   }
 }
