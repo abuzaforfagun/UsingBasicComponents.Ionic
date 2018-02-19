@@ -14,6 +14,7 @@ import { LoadingPage } from '../pages/loading/loading';
 import { PopOverPage } from '../pages/pop-over/pop-over';
 import { PopOverCoontentComponent } from '../components/pop-over-coontent/pop-over-coontent';
 import { RangePage } from '../pages/range/range';
+import { SearchBarPage } from '../pages/search-bar/search-bar';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RangePage } from '../pages/range/range';
     LoadingPage,
     PopOverPage,
     PopOverCoontentComponent,
-    RangePage
+    RangePage,
+    SearchBarPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { RangePage } from '../pages/range/range';
     LoadingPage,
     PopOverPage,
     PopOverCoontentComponent,
-    RangePage
+    RangePage,
+    SearchBarPage
   ],
   providers: [
     StatusBar,

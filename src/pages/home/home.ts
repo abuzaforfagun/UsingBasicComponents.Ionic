@@ -5,6 +5,7 @@ import { RadioAlertPage } from '../radio-alert/radio-alert';
 import { LoadingPage } from '../loading/loading';
 import { PopOverPage } from '../pop-over/pop-over';
 import { RangePage } from '../range/range';
+import { SearchBarPage } from '../search-bar/search-bar';
 
 @Component({
   selector: 'page-home',
@@ -32,6 +33,9 @@ export class HomePage {
       },
       {
         title:"Range"
+      },
+      {
+        title:"Search Bar"
       }
     );
   }
@@ -51,6 +55,9 @@ export class HomePage {
     }else if(item.title=="Range")
     {
       this.navCtrl.push(RangePage);
+    }else if(item.title=="Search Bar")
+    {
+      this.navCtrl.push(SearchBarPage);
     }
   }
 
