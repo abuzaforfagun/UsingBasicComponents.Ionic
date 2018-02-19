@@ -13,6 +13,7 @@ import { RadioAlertPage } from '../pages/radio-alert/radio-alert';
 import { LoadingPage } from '../pages/loading/loading';
 import { PopOverPage } from '../pages/pop-over/pop-over';
 import { PopOverCoontentComponent } from '../components/pop-over-coontent/pop-over-coontent';
+import { RangePage } from '../pages/range/range';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PopOverCoontentComponent } from '../components/pop-over-coontent/pop-ov
     RadioAlertPage,
     LoadingPage,
     PopOverPage,
-    PopOverCoontentComponent
+    PopOverCoontentComponent,
+    RangePage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import { PopOverCoontentComponent } from '../components/pop-over-coontent/pop-ov
     RadioAlertPage,
     LoadingPage,
     PopOverPage,
-    PopOverCoontentComponent
+    PopOverCoontentComponent,
+    RangePage
   ],
   providers: [
     StatusBar,

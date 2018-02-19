@@ -4,6 +4,7 @@ import { ActionSheetPage } from '../action-sheet/action-sheet';
 import { RadioAlertPage } from '../radio-alert/radio-alert';
 import { LoadingPage } from '../loading/loading';
 import { PopOverPage } from '../pop-over/pop-over';
+import { RangePage } from '../range/range';
 
 @Component({
   selector: 'page-home',
@@ -28,6 +29,9 @@ export class HomePage {
       },
       {
         title:"Pop Over"
+      },
+      {
+        title:"Range"
       }
     );
   }
@@ -44,6 +48,9 @@ export class HomePage {
     }else if(item.title=="Pop Over")
     {
       this.navCtrl.push(PopOverPage);
+    }else if(item.title=="Range")
+    {
+      this.navCtrl.push(RangePage);
     }
   }
 
